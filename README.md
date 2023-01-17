@@ -1,1 +1,1 @@
-A project that allows me to practice using a Python web crawler to get weather information on weather.com through the crawler
+This is about my project to practice using a Python web crawler to get weather information on weather.com
