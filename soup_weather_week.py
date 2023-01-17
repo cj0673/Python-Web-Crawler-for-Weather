@@ -32,7 +32,7 @@ while True:
         print('')
 
 #Create a header, visit the site, parse the data through Beautifulsoup, and store the data in a variable soup
-headers = {'User-Agent': 'Chrome/66.0.3359.181'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
 web = requests.get(url, headers=headers)
 soup = BeautifulSoup(web.text, 'html.parser')
 
