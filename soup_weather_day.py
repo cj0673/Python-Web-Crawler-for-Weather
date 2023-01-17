@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
-headers = {'user-agent': 'Chrome/66.0.3359.181'}
-web = requests.get("https://weather.com/zh-TW/weather/today/l/53c5c38d4c75c225b874f434b19862ba5ab939e4e87866a0aa20eccf0e31233f", headers=headers)
+headers = {'User-Agent': 'Chrome/66.0.3359.181'}
+url = 'https://weather.com/zh-TW/weather/today/l/25.0076143,121.5053019'
+web = requests.get(url, headers=headers)
 
 soup = BeautifulSoup(web.text, 'html.parser')
 weather = soup.select('span.CurrentConditions--timestamp--1ybTk')
